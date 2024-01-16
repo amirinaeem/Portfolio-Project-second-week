@@ -1,0 +1,576 @@
+/*-----common styles-----*/
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*-----end of common styles-----*/
+
+/*-----section1-----*/
+.section1 {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(182, 182, 184, 0),
+      rgba(132, 132, 131, 0.7)
+    ),
+    url(parallax1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.navbar a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  color: black;
+  font-weight: 300;
+}
+
+.navbar a:hover {
+  background-color: rgb(187, 187, 187);
+  color: black;
+}
+
+.section1-title {
+  width: max-content;
+  height: max-content;
+  background-color: rgb(61, 61, 61);
+  color: white;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  padding: 1.1rem 2rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+/*-----End of section1-----*/
+/*-----media-labtop-section1---*/
+@media (min-width: 1000px) {
+}
+/*-----end of media-labtop-section1---*/
+/*-----media-iphone section1-----*/
+
+@media (min-width: 430px) {
+  body {
+    width: 500px;
+    height: 100vh;
+  }
+  .navbar a {
+    visibility: hidden;
+  }
+  .nav-display1 {
+    visibility: visible !important;
+  }
+  .nav-display2 {
+    visibility: visible !important;
+  }
+
+  .nav-display2:hover {
+    background: black !important;
+    color: white !important;
+  }
+
+  .section1-title {
+    display: none;
+  }
+
+  .smallscreen-title {
+    width: max-content;
+    height: max-content;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 1rem;
+    font-weight: 900;
+    font-size: 1.099rem;
+  }
+}
+
+/*-----End of media-iphone section1-----*/
+
+/*-----Section2-style-----*/
+.section2 {
+  width: 100%;
+  height: 100vh;
+  color: gray;
+}
+
+.section2-title {
+  text-transform: uppercase;
+  color: gray;
+  font-weight: 500;
+  padding-top: 2.5rem;
+}
+
+.section2-paragraph {
+  line-height: 1.7rem;
+  text-align: justify;
+}
+
+.img-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section2-img {
+  width: 100%;
+  opacity: 0.5;
+  padding: 2.1rem 1.3rem;
+}
+
+.section2-img:hover {
+  opacity: 1;
+}
+
+.skill-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3.8rem;
+}
+
+.skill-element {
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.7rem;
+  padding: 1rem 0;
+}
+
+.skill-percentage {
+  height: 2.1rem;
+  width: 100%;
+  background: rgb(223, 223, 223);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.skill-percentage.first-element::after {
+  content: "90%";
+  height: 100%;
+  width: 90%;
+  left: 0;
+  position: absolute;
+  background: rgb(84, 84, 84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.skill-percentage.second-element::after {
+  content: "85%";
+  height: 100%;
+  width: 85%;
+  left: 0;
+  position: absolute;
+  background: rgb(84, 84, 84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.skill-percentage.third-element::after {
+  content: "75%";
+  height: 100%;
+  width: 75%;
+  left: 0;
+  position: absolute;
+  background: rgb(84, 84, 84);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/*-----End of Section2-style-----*/
+
+/*-----media-ipone-section2-----*/
+@media (min-width: 430px) {
+  .section2-textimg {
+    display: none;
+  }
+  .section2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(
+      rgba(252, 252, 253, 0),
+      rgba(234, 234, 234, 0.7)
+    );
+    padding: 2rem 1.5rem;
+  }
+  .section2-img {
+    width: 100%;
+    height: 100%;
+    padding: 2.1rem 3.4rem;
+  }
+}
+
+/*-----end of media-ipone-section2-----*/
+
+/*---------section3-style------------*/
+.section3 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(parallax2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(94, 94, 94);
+  width: 100%;
+  height: 100%;
+}
+
+.achievements-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: large;
+  color: White;
+  font-size: 1.2rem;
+}
+
+.achievements-details span {
+  padding: 0.3rem 0;
+}
+
+.portfolio {
+  height: 32vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.1rem;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+
+.portfolio-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.portfolio-description {
+  font-style: italic;
+}
+
+.portfolio-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.first-group img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.first-group img:hover {
+  opacity: 0.7;
+}
+
+.second-group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.second-group img {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.second-group img:hover {
+  opacity: 0.7;
+}
+
+.portofolio-span {
+  font-size: large;
+  background: rgb(213, 213, 213);
+  padding: 1rem 1.5rem;
+  color: black;
+  margin-bottom: 4rem;
+}
+
+.portofolio-span:hover {
+  background: rgb(156, 156, 156);
+}
+
+/*---------End of section3-Style-----------*/
+
+/*---------media-iphone-section3------------*/
+@media (min-width: 430px) {
+  .section3 {
+    width: 100%;
+    height: 100%;
+  }
+  .achievements-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 35vh;
+    width: 100%;
+  }
+  .portfolio {
+    font-size: 30px;
+    letter-spacing: 0.4rem;
+  }
+  .portfolio-title {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+  .portfolio-description {
+    padding-bottom: 2rem;
+  }
+  .first-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .second-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .portofolio-span {
+    margin-top: 4rem;
+  }
+}
+
+/*---------end of media-iphone-section3------------*/
+
+/*-------------section-4 style--------------------*/
+.section4 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section4-title {
+  background-image: url(parallax3.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 40px;
+  color: white;
+  letter-spacing: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 33%;
+}
+
+.section4-worklocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.section4-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.section4-address a,
+p {
+  color: gray;
+  padding: 0.4rem;
+  font-size: large;
+}
+
+.section4-registerform input {
+  padding: 1rem;
+  border: 0.1px solid gray;
+}
+
+footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  background-color: rgb(86, 85, 85);
+  text-align: center;
+}
+
+.btn-footer {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 20px 20px 15px 30px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  margin-top: 4rem;
+}
+
+.btn-footer:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-footer i {
+  font-size: 16px;
+  color: black;
+}
+
+.section5-icon i {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+footer p {
+  padding-bottom: 30px;
+  color: white;
+}
+
+/*-------------------end of section-4 style--------*/
+@media (min-width: 430px) {
+  .section4-image img {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+  }
+  .section4-address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1.9rem;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+
+  .name-email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .name-email input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border: 0.1px solid gray;
+  }
+
+  .message input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    border: 0.1px solid gray;
+  }
+
+  .btn-sent {
+    width: 150px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    align-self: flex-end;
+    margin: 1rem 0;
+  }
+}
+
+/*-------------------media-iphone-section4--------*/
